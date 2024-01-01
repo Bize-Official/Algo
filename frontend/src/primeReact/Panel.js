@@ -1,8 +1,10 @@
 
 import React from 'react'; 
 import { PanelMenu } from 'primereact/panelmenu';
-import styles from './Styles.module.css';
+import styles from './styles/Styles.module.css';
 import { Button } from 'primereact/button';
+import './styles/styles.css';
+import { MegaMenu } from 'primereact/megamenu';
 
 export default function Panel() {
     const items = [
@@ -123,10 +125,10 @@ export default function Panel() {
     ];
 
     return (
+
         <div className="card flex justify-content-center">
-            <div className={styles.sideMenu}>
-                <PanelMenu model={items} className="w-full md:w-25rem" />
-            </div>
+
+            <PanelMenu model={items} multiple={true} className="w-full md:w-25rem p-panelmenu" />
         </div>
     )
 }

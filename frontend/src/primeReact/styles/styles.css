@@ -1,0 +1,122 @@
+.p-panelmenu a {
+    color: #333; /* Or any color you want */
+    text-decoration: none; /* Removes the underline */
+    border: none;
+
+}
+
+.p-panelmenu a:hover {
+    text-decoration: none;
+}
+
+nav.navbar.fixed-top .container-fluid {
+    justify-content: flex-end; /* Override space-between */
+  }
+  
+
+.top-navbar {
+    z-index: 1000 !important;
+}
+.top-navbar a {
+    display: block;
+  color: #f2f2f2; /* Light grey text */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background: rgb(255, 201, 0);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 201, 0, 1) 0%,
+        rgba(255, 177, 57, 1) 0%,
+        rgba(255, 177, 68, 1) 100%
+    );
+    box-shadow: 2px 0 5px rgba(99, 99, 99, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1020;
+    transition: width 0.3s ease;
+}
+
+.side-menu ul li .menu-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.side-menu-closed .menu-item-text {
+    display: none;  
+}
+
+.side-menu-closed {
+    width: 80px;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu-item-icon {
+    margin-right: 10px;
+    font-size: xx-large;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.side-menu ul li .menu-item:hover {
+    background-color: rgba(254, 254, 254, 0.6);
+    color: black;
+    cursor: pointer;
+}
+
+.side-menu ul li .menu-item:active {
+    background-color: #a3a3a3;
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+
+.side-menu ul {
+    padding-top: 100px;
+    list-style: none;
+    flex: 1;
+    margin: 0;
+}
+.side-menu ul li a {
+    display: block;
+    padding: 20px 15px 20px 30px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.side-menu ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.side-menu-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1030;
+}
+
+
+.menu-border {
+    border-bottom: 1px solid #b46f00;
+}

@@ -2,40 +2,38 @@
 import React, { useState } from 'react';
 import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
-import Panel from './side-menu';
+import Panel from './Panel';
 import { ToggleButton } from 'primereact/togglebutton';
+import styles from './styles/Styles.module.css';
+import BasicBar from './SideBar';
 
 
 export default function SideMenu() {
-    const [visible, setVisible] = useState(false);
+    const [showSideMenu, setShowSideMenu] = useState(false);
 
-    const customIcons = (
-        <React.Fragment>
-            <button className="p-sidebar-icon p-link mr-2">
-                <span className="pi pi-print" />
-            </button>
-            <button className="p-sidebar-icon p-link mr-2">
-                <span className="pi pi-search" />
-            </button>
-        </React.Fragment>
-    );
-
-    const customHeader = (
-        <React.Fragment>
-            <h2 style={{ marginBottom: 0 }}>Sidebar</h2>
-        </React.Fragment>
-    );
     
     return (
-        <div className="card flex justify-content-center">
-            <Sidebar header={customHeader} visible={visible} onHide={() => setVisible(false)} icons={customIcons}>
+        <>
+            {/* <nav className="top-navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </nav> */}
+            <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark top-navbar">
+            <div className="container-fluid"> 
                 
-                <Panel/>
-                
-            </Sidebar>
-            
-                <Button icon={"pi pi-bars"} onClick={() => setVisible(true)} />
-        </div>
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            </nav>
+
+            <button className='btn btn-primary side-menu-button' onClick={() => setShowSideMenu(!showSideMenu)}>Hello</button>
+            <BasicBar show={showSideMenu}/>
+
+        </>
     )
 }
         
