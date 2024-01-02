@@ -33,13 +33,8 @@ nav.navbar.fixed-top .container-fluid {
     top: 0;
     width: 280px;
     height: 100%;
-    background: rgb(255, 201, 0);
-    background: linear-gradient(
-        0deg,
-        rgba(255, 201, 0, 1) 0%,
-        rgba(255, 177, 57, 1) 0%,
-        rgba(255, 177, 68, 1) 100%
-    );
+    background: rgb(40,45,50);
+    background: linear-gradient(90deg, rgba(40,45,50,1) 0%, rgba(40,45,50,1) 50%, rgba(40,45,50,1) 100%);
     box-shadow: 2px 0 5px rgba(99, 99, 99, 0.5);
     display: flex;
     flex-direction: column;
@@ -54,26 +49,9 @@ nav.navbar.fixed-top .container-fluid {
     flex-direction: column;
     align-items: center; /* Center align the flex items horizontally */
     padding-top: 200px;
-    padding-left: 0; /* Ensure there's no padding on the left */
     list-style: none;
-    width: 100%; /* Ensure the list takes full width of the sidebar */
+    padding-left: 0; /* Ensure there's no padding on the left */
     margin: 0;
-  }
-
-ul .menu-list {
-    display: flex;
-    flex-direction: column;
-    padding-top: 200px;
-}
-.item {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-    color: black;
-    text-decoration: none;
-    transition: background-color 0.3s;
 }
 
 .side-menu ul li .menu-item {
@@ -82,9 +60,11 @@ ul .menu-list {
     text-align: left;
     background-color: transparent;
     border: none;
-    color: black;
+    border-radius: 5px;
+    color: rgb(216, 216, 216);
     text-decoration: none;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 .side-menu-closed .menu-item-text {
@@ -96,41 +76,24 @@ ul .menu-list {
     transition: width 0.3s ease-in-out;
 }
 
-.menu-item-icon {
-    margin-right: 10px;
-    font-size: xx-large;
-    width: 35px;
-    text-align: center;
-    text-decoration: none;
-}
-
 .side-menu ul li .menu-item:hover {
-    background-color: rgba(254, 254, 254, 0.6);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
     cursor: pointer;
 }
 
 .side-menu ul li .menu-item:active {
     background-color: #a3a3a3;
     transition: background-color 0.3s ease-in-out;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
-.side-menu ul {
-    padding-top: 200px;
-    list-style: none;
-    flex: 1;
-    margin: 0;
+
+.side-menu li {
+    padding-bottom: 20px;
 }
-.side-menu ul li a {
-    display: block;
-    padding: 20px 15px 20px 30px;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-    transition: background-color 0.3s;
-}
+
 
 .side-menu ul li a:hover {
     background-color: #ddd;
@@ -145,64 +108,64 @@ ul .menu-list {
 }
 
 .menu-border {
-    border-bottom: 1px solid #b46f00;
+    border-bottom: 1px solid silver;
 }
 
 #checkbox {
-  display: none;
-}
-
-.toggle {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition-duration: .5s;
-}
-
-.bars {
-  width: 100%;
-  height: 4px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 4px;
-}
-
-#bar2 {
-  transition-duration: .8s;
-}
-
-#bar1,#bar3 {
-  width: 70%;
-}
-
-#checkbox:checked + .toggle .bars {
-  position: absolute;
-  transition-duration: .5s;
-}
-
-#checkbox:checked + .toggle #bar2 {
-  transform: scaleX(0);
-  transition-duration: .5s;
-}
-
-#checkbox:checked + .toggle #bar1 {
-  width: 100%;
-  transform: rotate(45deg);
-  transition-duration: .5s;
-}
-
-#checkbox:checked + .toggle #bar3 {
-  width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: .5s;
-}
-
-#checkbox:checked + .toggle {
-  transition-duration: .5s;
-  transform: rotate(180deg);
-}
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1,#bar3 {
+    width: 70%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }

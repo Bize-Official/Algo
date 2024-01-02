@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MegaMenu } from 'primereact/megamenu';
 import './styles/styles.css';
@@ -22,10 +21,10 @@ export default function BasicBar() {
             <div className={`side-menu ${showSideMenu ? '' : 'side-menu-closed'}`}>
                 <ul className="menu-list">
                     <li className="item">
-                        <Button icon="pi pi-home" severity="secondary" size="large" className='menu-item' raised />
+                        <Button icon="pi pi-home" severity="secondary" size="large" className='menu-item' />
                     </li>
                     <li className="item">
-                        <Button icon="pi pi-home" severity="secondary" size="large" className='menu-item' raised />
+                        <Button icon="pi pi-home" severity="secondary" size="large" className='menu-item' />
                     </li>
                 </ul>
             </div>
