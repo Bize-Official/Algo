@@ -6,26 +6,16 @@ import Panel from './Panel';
 import { ToggleButton } from 'primereact/togglebutton';
 import styles from './styles/Styles.module.css';
 import BasicBar from './SideBar';
-
+import  Navbar from './navbar';
 
 export default function SideMenu() {
 
     
     return (
         <>
-
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light top-navbar">
-                <div className="container-fluid"> 
-                    
-                    <a href="#home">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                </div>
-            </nav>
+            <Navbar />
 
             <BasicBar />
-
         </>
     )
 }

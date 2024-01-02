@@ -19,15 +19,12 @@ export default function App() {
 
   return (
     <>
-
       <PrimeReactProvider value={value}>
+
         <SideMenu />
-        {/* <BasicBar /> */}
+        
       </PrimeReactProvider>
-      {/* <Bar /> */}
-      {/* <TWidget /> */}
-      {/* <Widget /> */}
-      {/* <Like /> */}
+
 
     </>
 
