@@ -8,7 +8,6 @@ import BasicBar from './primeReact/SideBar';
 
 import { PrimeReactProvider } from 'primereact/api';
 
-
 export default function App() {
 
   const value = {
