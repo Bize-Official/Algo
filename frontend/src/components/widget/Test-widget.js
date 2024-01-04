@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 //import "./styles.css";
 import styles from './TWidget.module.css';
-import Like from './components/Interactions';
 const content1 = 
 <><h2>Details</h2>
     <p>
@@ -84,7 +83,7 @@ const buttons = [
                   style={{ display: index === activeBlock ? 'block' : 'none' }}
                 >
                   {button.content}
-                    {button.title === 'Details' ? <Like /> : ''}
+                   
 
                 </div>
               ))}

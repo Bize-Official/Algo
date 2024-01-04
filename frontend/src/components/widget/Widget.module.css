@@ -9,7 +9,6 @@
   
   body {
     margin: 0;
-    background: #757575 !important;
     display: grid;
     place-items: center;
     font-family: "Euclid Circular A", "Poppins";

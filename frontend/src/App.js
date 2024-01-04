@@ -1,5 +1,5 @@
 import './App.css';
-// import { Widget } from './components/widget/widget';
+import { Widget } from './components/widget/widget';
 import { TWidget } from './components/widget/Test-widget';
 // import Like from './components/widget/components/Interactions';
 import Bar from './components/Interactions/Bar';
@@ -22,6 +22,8 @@ export default function App() {
       <PrimeReactProvider value={value}>
 
         <SideMenu />
+        {/* <Widget /> */}
+        <TWidget />
         
       </PrimeReactProvider>
 

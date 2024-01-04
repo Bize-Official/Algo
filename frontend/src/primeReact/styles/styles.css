@@ -11,8 +11,11 @@
 
 nav.navbar.fixed-top .container-fluid {
     justify-content: flex-end; /* Override space-between */
-  }
+}
   
+.navbar-icon {
+    padding-right: 50px; 
+}
 
 .top-navbar {
     z-index: 1000 !important;
@@ -26,9 +29,7 @@ nav.navbar.fixed-top .container-fluid {
     padding: 14px 16px;
     text-decoration: none;
 } */
-.navbar-icon {
-    padding-right: 50px; 
-}
+
 .p-menu {
     border-radius: 7px;
 }
