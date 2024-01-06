@@ -4,7 +4,7 @@ import styles from './TWidget.module.css';
 import { ScrollPanel } from 'primereact/scrollpanel';
 import DirectMessage from './components/dm';
 import { Button } from "primereact/button";
-
+import { Avatar } from "primereact/avatar";
 
 const content1 = 
   <>
@@ -58,6 +58,12 @@ const buttons = [
   
     return (
       <>
+      <div className={styles.biz}>
+        <div className={styles.avatarContainer}>
+          <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" label="Show" className="mr-2" size="large" shape="circle" />
+          <p className={styles.username}>@romisas</p>
+        </div>
+        
         <article className={styles.card}>
           <div className={styles.buttons}>
             {buttons.map((button, index) => (
@@ -80,13 +86,14 @@ const buttons = [
                   style={{ display: index === activeBlock ? 'block' : 'none' }}
                 >
                   {button.content}
-                   
+                  
 
                 </div>
               ))}
             </div>
           </div>
         </article>
+        </div>
       </>
     );
   };

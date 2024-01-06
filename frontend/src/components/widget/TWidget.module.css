@@ -28,7 +28,7 @@
     width: 480px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(57, 76, 96, 0.06);
+    box-shadow: 0 5px 5px rgba(160, 160, 160, 0.06);
     transition: 0.3s;
     background: whitesmoke;
   }
@@ -43,7 +43,7 @@
     font-size: 14px;
     width: 100%;
     height: 36px;
-    padding: 0 0 0 12px;
+    padding: 4px 0 0 12px;
     background: transparent;
     border-radius: 6px;
     border: 0;
@@ -120,18 +120,23 @@
     background: var(--color-primary);
     color: #f9f9f9;
   }
-  .menuItem {
-    display: flex;
-    align-items: center;
-
-    border-radius: 5px;
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-    transition: background-color 0.3s;
-
-  }
-
   .menuItem:hover {
     background-color: rgba(122, 124, 119, 0.2);
+  }
+
+  .biz {
+    position: relative;
+  }
+  .biz .avatarContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    right: 5%;
+    top: -20px;
+
+  }
+  .biz .avatarContainer .username {
+    color: grey;
+    font-size: small;
   }
 
