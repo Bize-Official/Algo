@@ -1,12 +1,7 @@
 import './App.css';
-import { Widget } from './components/widget/widget';
-import { TWidget } from './components/widget/Test-widget';
-// import Like from './components/widget/components/Interactions';
-import Bar from './components/Interactions/Bar';
-import SideMenu from './primeReact/main';
-import BasicBar from './primeReact/SideBar';
-
+import Home from "./pages/home.js";
 import { PrimeReactProvider } from 'primereact/api';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
 
@@ -20,16 +15,14 @@ export default function App() {
   return (
     <>
       <PrimeReactProvider value={value}>
-
-        <SideMenu />
-        {/* <Widget /> */}
-        <TWidget />
-        
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            
+          </Routes>
+      </BrowserRouter>
       </PrimeReactProvider>
-
-
     </>
-
   );
 }
 

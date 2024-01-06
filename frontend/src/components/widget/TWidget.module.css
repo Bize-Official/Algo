@@ -55,11 +55,6 @@
     color: #a7a7a7;
   }
   
-  .buttons button.active {
-    background: var(--color-primary);
-    color: #f9f9f9;
-  }
-  
   .wrapper {
     position: relative;
     overflow: visible;
@@ -121,3 +116,22 @@
     font-size: 18px;
     font-weight: 500;
   }
+  .buttons button.active {
+    background: var(--color-primary);
+    color: #f9f9f9;
+  }
+  .menuItem {
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+  }
+
+  .menuItem:hover {
+    background-color: rgba(122, 124, 119, 0.2);
+  }
+

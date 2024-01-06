@@ -78,12 +78,12 @@
   
   .wrapper::before {
     top: 0;
-    background: linear-gradient(#ffffff, rgb(255 255 255 / 0%));
+    /* background: linear-gradient(#ffffff, rgb(255 255 255 / 0%)); */
   }
   
   .wrapper::after {
     bottom: 0;
-    background: linear-gradient(rgb(255 255 255 / 0%), #ffffff);
+    /* background: linear-gradient(rgb(255 255 255 / 0%), #ffffff); */
   }
   
   .content {
