@@ -53,17 +53,17 @@ export const PostTest = () => {
             </ScrollPanel>
           </div>
           <div>
+            <ScrollPanel style={{ width: '100%', height: '250px' }}  className="custombar2">
+                <h2>Message</h2>
+                <DirectMessage />
+            </ScrollPanel>
+          </div>
+          <div>
           <ScrollPanel style={{ width: '100%', height: '250px' }}  className="custombar2">
             <h2>Account</h2>
             <p>
               This is the tab content, you can put anything you like in here.
             </p>
-            </ScrollPanel>
-          </div>
-          <div>
-            <ScrollPanel style={{ width: '100%', height: '250px' }}  className="custombar2">
-                <h2>Message</h2>
-                <DirectMessage />
             </ScrollPanel>
           </div>
         </div>

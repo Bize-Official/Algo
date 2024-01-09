@@ -28,6 +28,7 @@
     background: #ffffff;
     width: var(--tab-width);
     border-radius: 8px;
+    border: 1px solid lightgray;
   }
   
   .widget > header {

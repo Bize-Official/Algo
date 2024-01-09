@@ -5,7 +5,7 @@ import ProfileHeader from '../components/profile/profilePage/profileHeader/profi
 function Profile() {
     return (
         <>
-            <SideMenu />
+            {/* <SideMenu /> */}
             {/* <ProfilePage /> */}
             <ProfileHeader />
 

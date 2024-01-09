@@ -8,29 +8,7 @@ function ProfileHeader() {
 	return (
 		<div>
 			<div className="bg-white">
-            <div className="container">
-                <div className="d-flex justify-content-between align-items-center ">
-                    <div>
-                        <a href="#/" className="d-inline-block text-dark">
-                        <strong>234</strong>
-                        <span className="text-muted">followers</span>
-                        </a>
-                        <a href="#/" className="d-inline-block text-dark ml-3">
-                        <strong>111</strong>
-                        <span className="text-muted">following</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#/" className="btn btn-success btn-sm">
-                        Follow
-                        </a>
-                        <a href="#/" className="btn btn-default icon-btn md-btn-flat btn-sm ml-1">
-                        <i className="ion ion-md-mail"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-                <hr className="m-0"/>
+            
 
                 <div className="container">
                     <div className="text-center py-5">
@@ -61,15 +39,11 @@ function ProfileHeader() {
                     <TabPanel header="Posts" rightIcon="pi pi-calendar mr-2">
                         < ProfilePage />
                     </TabPanel>
-                    <TabPanel header="Header II" rightIcon="pi pi-user ml-2">
-                        <p className="m-0">
-                            Sed ut perspiciatis unde 
-                        </p>
+                    <TabPanel header="Channels" rightIcon="pi pi-user mr-2">
+                        < ProfilePage />
                     </TabPanel>
                     <TabPanel header="Header III" rightIcon="pi pi-cog ml-2">
-                        <p className="m-0">
-                            At vero eos 
-                        </p>
+                        < ProfilePage />
                     </TabPanel>
                 </TabView>
                 

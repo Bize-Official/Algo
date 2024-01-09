@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "primereact/resources/themes/saga-green/theme.css";
 import 'primeicons/primeicons.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
