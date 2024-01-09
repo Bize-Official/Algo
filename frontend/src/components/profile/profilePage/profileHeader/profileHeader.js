@@ -37,7 +37,7 @@ function ProfileHeader() {
                 </div>
                 <TabView >
                     <TabPanel header="Posts" rightIcon="pi pi-calendar mr-2">
-                        < ProfilePage />
+                        <ProfilePage />
                     </TabPanel>
                     <TabPanel header="Channels" rightIcon="pi pi-user mr-2">
                         < ProfilePage />
@@ -47,7 +47,6 @@ function ProfileHeader() {
                     </TabPanel>
                 </TabView>
                 
-
             </div>
 		</div>
 	);

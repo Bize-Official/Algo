@@ -38,7 +38,7 @@
   }
   
   .widget > header > button {
-    padding: 20px;
+    padding: 5px;
     font-size: 15px;
     width: var(--button-width);
     cursor: pointer;
@@ -64,7 +64,7 @@
   .content {
     position: relative;
     overflow: hidden;
-    height: 140px;
+    height: 280px;
   }
   
   .content-inner {
