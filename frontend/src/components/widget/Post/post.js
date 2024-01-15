@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./style.css";
-import DirectMessage from './components/dm';
+import "./postStyle.css";
+import DirectMessage from '../components/dm';
 import { ScrollPanel } from 'primereact/scrollpanel';
 
 const buttonWidth = 64;
-const tabWidth = 300;
+const tabWidth = 400;
 const tabHeaders = 
 [
     { title: "Details", icon:<i className="bi bi-briefcase-fill h5"></i> },
@@ -13,10 +13,11 @@ const tabHeaders =
   ];
 const tabContent = [];
 
-export const PostTest = () => {
+export const OfficialPost = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
+    
     <article className="widget">
       <header>
         {tabHeaders.map((tab, index) => (
@@ -54,7 +55,6 @@ export const PostTest = () => {
           </div>
           <div>
             <ScrollPanel style={{ width: '100%', height: '250px' }}  className="custombar2">
-                <h2>Message</h2>
                 <DirectMessage />
             </ScrollPanel>
           </div>

@@ -1,6 +1,6 @@
 :root {
     --color-primary: rgb(8, 121, 32);
-    --tab-width: 300px;
+    --tab-width: 400px;
     --button-width: 64px;
   }
   
@@ -34,6 +34,8 @@
   .widget > header {
     position: relative;
     display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
     border-bottom: 1px solid #e2e1ef;
   }
   
@@ -102,3 +104,10 @@
     width: inherit;
     padding: 20px;
   }
+  /* .navbar-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+  } */
+  
+

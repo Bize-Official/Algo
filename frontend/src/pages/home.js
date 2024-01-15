@@ -1,15 +1,15 @@
 import SideMenu from '../primeReact/main';
 import { TWidget } from '../components/widget/Test-widget';
 import { Widget } from '../components/widget/widget';
-import { PostTest } from '../components/widget/post';
 import ProfileStatistics from '../components/widget/post-profile';
+import { OfficialPost } from '../components/widget/Post/post';
 
 function Home() {
     return (
         <>
             <SideMenu />
             {/* <TWidget /> */}
-            <PostTest />
+            <OfficialPost />
             <TWidget />
             {/* <ProfileStatistics /> */}
             {/* <Widget /> */}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { TWidget } from '../../widget/Test-widget';
-import { PostTest } from '../../widget/post';
+import { OfficialPost } from '../../widget/Post/post';
 
 
 function ProfilePage() {
@@ -19,7 +19,7 @@ function ProfilePage() {
                                         <div>
                                             <img className="profile-pic" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="profile"/>
                                             <span className="profile-name">Amiah Burton</span>
-                                        </div>
+                                        </div>n
                                         <div className="d-none d-md-block">
                                             <button className="btn btn-primary btn-icon-text btn-edit-profile">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-edit btn-icon-prepend">
@@ -202,7 +202,7 @@ function ProfilePage() {
                                             </div>
                                         </div>
                                         
-                                            <PostTest />
+                                            <OfficialPost />
                                 
                                         <div className="card-footer">
                                             <div className="d-flex post-actions">
